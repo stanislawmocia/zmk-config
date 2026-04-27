@@ -23,8 +23,3 @@
         wakeup-sources = <&wakeup_scan>;
     };
 };
-
-/* Usuwamy wakeup-source z matrix — inne klawisze nie budzą z soft-off */
-&kscan0 {
-    /delete-property/ wakeup-source;
-};
